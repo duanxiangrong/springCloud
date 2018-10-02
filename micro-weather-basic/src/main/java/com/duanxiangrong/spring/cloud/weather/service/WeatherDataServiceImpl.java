@@ -11,7 +11,7 @@ import com.duanxiangrong.spring.cloud.weather.vo.WeatherResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Service
-public class WeatherDataServiceImpl implements WeatherDateService {
+public class WeatherDataServiceImpl implements WeatherDataService {
 	
 	@Autowired
 	private RestTemplate restTemplate;

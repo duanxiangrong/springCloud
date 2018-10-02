@@ -5,7 +5,7 @@ import com.duanxiangrong.spring.cloud.weather.vo.WeatherResponse;
 /*
  * 天气数据服务
  */
-public interface WeatherDateService {
+public interface WeatherDataService {
 	
 	/*
 	 * 根据城市ID来查询天气数据
