@@ -30,6 +30,7 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-	compile('org.apache.httpcompontents.httpclient:4.5.6')
+	//compile('org.apache.httpcomponents:httpclient:jar:4.5.3')
+	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
