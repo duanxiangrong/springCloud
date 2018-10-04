@@ -4,23 +4,23 @@ import java.io.Serializable;
 
 public class Forecast implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private String data;
-	private String hight;
+	private String date;
+	private String high;
 	private String fengxiang;
 	private String low;
 	private String fengli;
 	private String type;
-	public String getData() {
-		return data;
+	public String getDate() {
+		return date;
 	}
-	public void setData(String data) {
-		this.data = data;
+	public void setDate(String date) {
+		this.date = date;
 	}
-	public String getHight() {
-		return hight;
+	public String getHigh() {
+		return high;
 	}
-	public void setHight(String hight) {
-		this.hight = hight;
+	public void setHigh(String high) {
+		this.high = high;
 	}
 	public String getFengxiang() {
 		return fengxiang;

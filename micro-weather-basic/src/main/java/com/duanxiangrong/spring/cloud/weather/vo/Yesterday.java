@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Yesterday implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private String date;
-	private String hight;
+	private String high;
 	private String fx;
 	private String low;
 	private String fl;
@@ -16,11 +16,11 @@ public class Yesterday implements Serializable {
 	public void setDate(String date) {
 		this.date = date;
 	}
-	public String getHight() {
-		return hight;
+	public String getHigh() {
+		return high;
 	}
-	public void setHight(String hight) {
-		this.hight = hight;
+	public void setHigh(String high) {
+		this.high = high;
 	}
 	public String getFx() {
 		return fx;
@@ -46,5 +46,6 @@ public class Yesterday implements Serializable {
 	public void setType(String type) {
 		this.type = type;
 	}
+	
 	
 }

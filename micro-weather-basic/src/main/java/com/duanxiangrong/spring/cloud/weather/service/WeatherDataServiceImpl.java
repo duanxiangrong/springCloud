@@ -19,14 +19,14 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 
 	@Override
 	public WeatherResponse getDataByCityId(String cityId) {
-		String uri = WEATHER_API + "?citykey" + cityId;
+		String uri = WEATHER_API + "?citykey=" + cityId;
 		// TODO Auto-generated method stub
 		return this.doGetWeatherData(uri);
 	}
 
 	@Override
 	public WeatherResponse getDataByCityName(String cityName) {
-		String uri = WEATHER_API + "?city" + cityName;
+		String uri = WEATHER_API + "?city=" + cityName;
 		// TODO Auto-generated method stub
 		return this.doGetWeatherData(uri);
 	}
@@ -44,7 +44,7 @@ public class WeatherDataServiceImpl implements WeatherDataService {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return null;
+		return weather;
 	}
 
 }
