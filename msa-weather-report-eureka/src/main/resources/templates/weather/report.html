@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title th:text="${reportModel.title}">天气预报</title>
+<link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+	<h1 th:text="${reportModel.title}">, Spring Boot!</h1>
+	<h2 th:text="${reportModel.report.city}">, Spring Boot!</h2>
+	<table>
+		<tr>
+			<th>日期</th>
+			<th>天气</th>
+			<th>温度</th>
+			<th>风向</th>
+		</tr>
+		<tr th:each="forecast : ${reportModel.report.forecast}">
+			<td th:text="${forecast.date}">0</td>
+			<td th:text="${forecast.type}">0</td>
+			<td th:text="${forecast.high}">0</td>
+			<td th:text="${forecast.low}">0</td>
+			<td th:text="${forecast.fengxiang}">0</td>
+		</tr>
+	</table>
+</body>
+</html>
