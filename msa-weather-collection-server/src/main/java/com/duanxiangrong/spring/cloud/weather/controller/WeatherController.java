@@ -16,7 +16,7 @@ import com.duanxiangrong.spring.cloud.weather.vo.WeatherResponse;
 @RequestMapping("/weather")
 public class WeatherController {
 	@Autowired
-	private WeatherDataService weatherDateService;
+	private WeatherDataService weatherDataService;
 	
 	//日志输出
 	//private final static Logger logger = LoggerFactory.getLogger(WeatherDataSyncJob.class);
@@ -29,7 +29,7 @@ public class WeatherController {
 	 */
 	@GetMapping("/cityId/{cityId}")
 	public WeatherResponse getReportByCityId(@PathVariable("cityId") String cityId) {
-		return weatherDateService.getDataByCityId(cityId);
+		return weatherDataService.getDataByCityId(cityId);
 	}
 	
 	/*
@@ -40,6 +40,6 @@ public class WeatherController {
 	 */
 	@GetMapping("/cityName/{cityName}")
 	public WeatherResponse getReportByCityName(@PathVariable("cityName") String cityName) {
-		return weatherDateService.getDataByCityName(cityName);
+		return weatherDataService.getDataByCityName(cityName);
 	}
 }
